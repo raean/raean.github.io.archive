@@ -18,5 +18,18 @@ $(document).ready(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
-    })
+    });
+
+    // Typing animation:
+    var typed = new Typed(".typing", {
+        strings: ["algorithms.", 
+        "natural language processing.", 
+        "machine learning.", 
+        "product design.", 
+        "big data.",
+        "data analytics."],
+        typeSpeed: 60 ,
+        backSpeed: 60,
+        loop: true
+    });
 });
