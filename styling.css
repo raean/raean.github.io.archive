@@ -87,12 +87,13 @@
 
 .home {
   display: flex;
-  background: url(images/000091800011.jpg) no-repeat center;
+  background: url(images/myself.jpg) no-repeat center;
   height: 100vh;
   color: #ffffff;
   min-height: 500px;
   font-family: 'Ubuntu', sans-serif;
 }
+
 
 .home .max-width {
   margin: auto 0 auto 40px;
@@ -249,5 +250,15 @@
   .home .home-content .text-4{
     font-size: 20px;
     padding: 8px 20px;
+  }
+
+  .home {
+  display: flex;
+  background: url(images/myself-mobile.jpg) no-repeat center;
+  height: 100vh;
+  color: #ffffff;
+  min-height: 500px;
+  font-family: 'Ubuntu', sans-serif;
+  background-size: cover;
   }
 }
