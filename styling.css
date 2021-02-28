@@ -18,7 +18,7 @@
   position: fixed;
   width: 100%;
   padding: 30px 0;
-  /* background: #2C497F; */
+  z-index: 999;
   font-family: 'Ubuntu', sans-serif;
   transition: all 0.6s ease;
 }
@@ -51,6 +51,7 @@
   color: #E6AF2E;
   font-size: 35px;
   font-weight: 300;
+  font-family: 'Poppins', sans-serif;
   }
 
 .navbar .logo a span{
@@ -137,6 +138,69 @@
   background-color: #E6AF2E;
 }
 
+/* About Section */
+
+
+.about{
+  padding-top: 100px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about .title{
+  position: relative;
+  font-weight: 300;
+  text-align: center; 
+  font-size: 40px;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+}
+
+.about .about-content {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+} 
+
+.about .about-content p{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.about .about-content .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.about .about-content .text span {
+  color: #E6AF2E; 
+}
+
+.about .about-content p {
+  text-align: justify ;
+}
+
+.about .about-content a {
+  display: inline-block;
+  background-color: none;
+  color:#E6AF2E;
+  font: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 15px;
+  border-radius: 6px;
+  border: 2px solid #E6AF2E;
+  transition: all 0.6s ease;
+}
+
+.about .about-content a:hover {
+  color: white;
+  background-color: #E6AF2E;
+}
+
 /* Responsive Media Query Start */
 @media (max-width: 1104px){
   .home .max-width{
@@ -216,6 +280,7 @@
     font-size: 23px;
     padding: 10px 30px;
   }
+
 } 
 
 @media (max-width: 690px){
