@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: 0;
   text-decoration: none;
+  font-family: 'Poppins', sans-serif;
 }
 
 .max-width {
@@ -19,7 +21,7 @@
   width: 100%;
   padding: 30px 0;
   z-index: 999;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Poppins', sans-serif;
   transition: all 0.6s ease;
 }
 
@@ -92,7 +94,7 @@
   height: 100vh;
   color: #ffffff;
   min-height: 500px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 
@@ -149,7 +151,7 @@
 
 .about .title{
   position: relative;
-  font-weight: 300;
+  font-weight: 600;
   text-align: center; 
   font-size: 40px;
   margin-bottom: 40px;
@@ -167,7 +169,8 @@
 } 
 
 .about .about-content p{
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
 }
 
 .about .about-content .text {
@@ -204,6 +207,154 @@
 .about .about-content a:hover {
   color: white;
   background-color: #E6AF2E;
+}
+
+/* Contact Me Section */
+
+.contact {
+  padding-top: 100px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background: #E6AF2E; 
+}
+
+.contact .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+.contact .title {
+  position: relative;
+  font-weight: 600;
+  text-align: center; 
+  font-size: 40px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+.contact .contact-content .column {
+  width: calc(50% - 30px);
+}
+
+.contact .contact-content .text {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.contact .contact-content .left p{
+  text-align: justify;
+}
+
+.contact .contact-content .left .icons{
+  margin: 10px 0;
+}
+
+.contact .contact-content .row{
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+
+.contact .contact-content .row .info{
+  margin-left: 30px;
+}
+
+.contact .contact-content .row i {
+  font-size: 25px;
+}
+
+.contact .contact-content .info .head {
+  font-weight: 900; 
+}
+
+.contact .contact-content .info .sub-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+}
+
+.contact .right form .fields{
+  display: flex;
+}
+
+.contact .right form .fields, 
+.contact .right form .field{
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.contact .right form .textarea {
+  height: 100px;
+}
+
+.contact .contact-content .info .head {
+color: white;
+}
+
+
+.contact .right form .textarea {
+  height: 100px;
+}
+
+.contact .right form .name {
+  margin-right: 20px;
+}
+
+.contact .right form .email {
+  margin-left: 20px;
+}
+
+.contact .right form .field input, 
+.contact .right form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+.contact .right form .textarea textarea {
+  padding-top:10px;
+  resize: none;
+  width: 100% ;
+}
+
+.contact .right form .button{
+  height: 47px;
+  width: 100%;
+}
+ 
+.contact .right form .button input{
+  display: inline-block;
+  background-color: transparent;
+  color: white;
+  font: 50px;
+  font-weight: 600;
+  padding: 12px 36px;
+  margin-top: 15px;
+  border-radius: 6px;
+  border: 2px solid white;
+  transition: all 0.6s ease;
+}
+
+.contact .right form .button input:hover {
+  color: #E6AF2E;
+  background-color:white;
+}
+
+footer{
+  background: white;
+  padding: 20px 23px;
+  font-size: 15px;
 }
 
 /* Responsive Media Query Start */
@@ -286,6 +437,12 @@
     padding: 10px 30px;
   }
 
+  .contact .contact-content .column{
+    width: 100%;
+    margin-bottom: 35px;
+    margin-right: 20px;
+  }
+
 } 
 
 @media (max-width: 690px){
@@ -305,6 +462,16 @@
     font-size: 21px;
     padding: 9px 25px;
   }
+
+  .about .about-content {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+
 }
 
 @media (max-width: 500px){
@@ -331,4 +498,15 @@
   font-family: 'Ubuntu', sans-serif;
   background-size: cover;
   }
+
+  .about .about-content {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+} 
+
 }
