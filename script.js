@@ -11,14 +11,14 @@ $(document).ready(function(){
             $('.navbar .menu li a').removeClass("sticky");
             $('.menu-btn').removeClass("sticky");
         }
-    });
+    })
 
     // Toggling the menu and navigation bar when in reduced window size:
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
-    });
+    })
 
     // Typing animation:
     var typed = new Typed(".typing", {
@@ -31,5 +31,5 @@ $(document).ready(function(){
         typeSpeed: 60 ,
         backSpeed: 60,
         loop: true
-    });
+    })
 });
