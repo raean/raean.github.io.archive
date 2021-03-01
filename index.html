@@ -23,8 +23,9 @@
          <ul class="menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#">Projects </a></li>
+            <li><a href="#projects">Projects </a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a onclick="window.open('./docs/Resume-Rae-Abunahla.pdf','_blank')" class="resume">Resume</a></li>
          </ul>
          <div class="menu-btn">
             <i class="fas fa-bars"></i>
@@ -52,7 +53,7 @@
         <h2 class="title">About me</h2>
         <div class="about-content">
           <div class="text">👋🏼 I'm Rae and I love <span class="typing"></span></div>
-          <p> After graduating with a Computer Science degree from York University in Toronto, Canada, Rae has spent just over a year working at Accenture within the Technology Consulting space. While his academic backkground was focused on software engineering, e-commere, big data and research, Rae has delivered work to several clients through data analytics, software development and design thinking workshops.
+          <p> After graduating with a Computer Science degree from York University in Toronto, Canada, Rae has spent just over a year working at Accenture within the Technology Consulting space. While his academic background was focused on software engineering, e-commere, big data and research, Rae has delivered work to several clients through data analytics, software development and design thinking workshops.
           </br></br>
           Rae is eager to return back to his roots with a more technical role in the software engineering space.
           </p>
@@ -62,14 +63,24 @@
    </section>
 
    <!-- Projects Secition-->
-   <!-- <section class="projects" id="projects">
-      <div class="max-width">
-        <h2 class="title">My Recent Projects</h2>
-        <div class="projects-content">
-          
+   <section class="projects" id="projects">
+    <div class="max-width">
+      <h2 class="title"> Projects </h2>
+      <div class="projects-content">
+        <div class="column left">
+          <img src="images/projects/unnamed.jpg">
+        </div>
+        <div class="column right">
+          <div class="text"> Bank Reader </div>
+          <div class="themes"> Natural Language Processing • Data Science </div>
+          <p> After graduating with a Computer Science degree from York University in Toronto, Canada, Rae has spent just over a year working at Accenture within the Technology Consulting space. While his academic backkground was focused on software engineering, e-commere, big data and research, Rae has delivered work to several clients through data analytics, software development and design thinking workshops.</p>
+          <a href="https:/www.github.com/raean" target="_blank"> > View the code here.  </a>
+          </br>
+          <img src="logos/python.png"></img></br> 
         </div>
       </div>
-   </section> -->
+    </div>
+   </section> 
 
    <!-- Contact Me Section -->
    <section class="contact" id="contact">
@@ -84,7 +95,7 @@
               <i class="fab fa-github"></i>
               <div class="info">
                 <a class="head" href="https://github.com/raean" target="_blank">Github</a>
-                <div class="sub-title"> My code. </div>
+                <div class="sub-title"> My code </div>
               </div>
             </div>
 
@@ -92,7 +103,7 @@
               <i class="fab fa-linkedin" ></i>
               <div class="info">
                 <a href="https://www.linkedin.com/in/rae" target="_blank" class="head">LinkedIn</a>
-                <div href="https://www.linkedin.com/in/rae" target="_blank"class="sub-title"> My timeline.</div>
+                <div href="https://www.linkedin.com/in/rae" target="_blank"class="sub-title"> My timeline</div>
               </div>
             </div>
 
@@ -100,7 +111,7 @@
               <i class="fas fa-map-marker-alt"></i>
               <div class="info">
                 <a href="https://en.wikipedia.org/wiki/Maple_syrup" target="_blank" class="head">Canada</a>
-                <div class="sub-title"> My location.</div>
+                <div class="sub-title"> My location </div>
               </div>
             </div>
           </div>
@@ -115,7 +126,7 @@
               </div>
 
               <div class="field email">
-                <input name="Email" type="text" placeholder="Email" required>
+                <input name="Email" type="text" placeholder="Email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
               </div>
             </div>
               <div class="field">
@@ -127,7 +138,7 @@
               </div>
 
               <div class="button">
-                <input type="submit"> </input>
+                <button type="submot" >Send!</button>
               </div>
           </form>
         </div>

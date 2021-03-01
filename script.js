@@ -5,6 +5,7 @@ $(document).ready(function(){
         if (this.scrollY > 20) {
             $('.navbar').addClass("sticky");
             $('.navbar .menu li a').addClass("sticky");
+            $('.navbar .menu .resume').addClass("sticky");
             $('.menu-btn').addClass("sticky");
         } else {
             $('.navbar').removeClass("sticky");
